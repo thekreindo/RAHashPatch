@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		 // Ruta al intérprete de tu entorno virtual
+		 "python.defaultInterpreterPath": ".venv/Scripts/python.exe",
+
+		 // Indica a VS Code que active automáticamente el entorno al abrir una terminal
+		 "python.terminal.activateEnvironment": true,
+	 
+		 // (Opcional) Fuerza el uso de CMD en lugar de PowerShell, si PowerShell da problemas
+		 "terminal.integrated.defaultProfile.windows": "Command Prompt"
+	}
+}
