@@ -1,5 +1,6 @@
 import requests
 import json
+from ManageEndpoints import convertjson as cjson
 import os
 
 consola = int(0)
@@ -7,7 +8,7 @@ userName = "kreindo"
 api_key: str = "de7WcnZBJWfwLI6Z4qthX3MMtAZIpkf0"
 
 payload = {"y": api_key,
-           "g": 1}
+           "g": 1,}
 
 allConsoles = "https://retroachievements.org/API/API_GetConsoleIDs.php"
 allGames = "https://retroachievements.org/API/API_GetGameList.php"
@@ -25,3 +26,6 @@ consoleId = reqAllConsolesjson[consola]["ID"]
 consoleName = reqAllConsolesjson[consola]["Name"]
 
 print(f"The console ID for {consoleName} is {consoleId}")
+
+print(reqAllConsolesjson.get())
+
